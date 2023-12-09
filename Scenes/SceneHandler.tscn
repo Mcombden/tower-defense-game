@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/UI/MainMenu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/SceneHandler.gd" type="Script" id=8]
+
+[node name="SceneHandler" type="Node"]
+script = ExtResource( 8 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 1222, 670 )
+zoom = Vector2( 2, 2 )
+
+[node name="MainMenu" parent="." instance=ExtResource( 3 )]
